@@ -44,18 +44,18 @@ public class LingkaranActivity extends AppCompatActivity {
         }
 
         try {
-            // Parsing jari-jari ke tipe int
-            int radius = Integer.parseInt(radiusInput);
+            // Parsing jari-jari ke tipe double
+            double radius = Double.parseDouble(radiusInput);
 
-            // Hitung luas (A = πr²), dibulatkan ke int
-            int area = (int) (Math.PI * radius * radius);
+            // Hitung luas (A = πr²)
+            double area = Math.PI * radius * radius;
 
             // Tampilkan hasil
             resultText.setText("Hasil: " + area);
 
         } catch (NumberFormatException e) {
             // Tampilkan pesan kesalahan jika input tidak valid
-            Toast.makeText(this, "Input tidak valid. Masukkan angka bulat saja.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Input tidak valid. Masukkan angka saja.", Toast.LENGTH_SHORT).show();
         }
     }
 }
