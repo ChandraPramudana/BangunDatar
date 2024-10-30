@@ -51,6 +51,7 @@
             android:layout_marginLeft="50dp"/>
 
         <Button
+            android:id="@+id/persegi"
             android:layout_width="150dp"
             android:layout_height="150dp"
             app:backgroundTint="#00C9A7"
@@ -65,6 +66,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/lingkaran"
             android:layout_width="310dp"
             android:layout_height="150dp"
             android:background="@drawable/button_square"
